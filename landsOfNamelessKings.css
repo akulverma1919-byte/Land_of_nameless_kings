@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: rgb(48, 236, 227);
+    background-image: url("Land of the Nameless King.png");
+    background-size: cover;
+}
+
+#head-1 {
+    color:rgb(190, 8, 8)
+}
+
+#new {
+    color:black
+}
+
+#white{
+    color:azure;
+}
+
+#green{
+    color: lightgreen;
+}
+
+#gray{
+    color:gray
+}
+
+#yellow{
+    color:yellow;
+}
+#lead {
+    color:black;
+}
+#save {
+    color:black;
+}
+#board {
+    border-collapse: collapse;
+    user-select: none;
+}
+
+#board td {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#board td:hover {
+    opacity: 0.7;
+}
+
+.empty {
+    background-color: white;
+}
+
+.land {
+    background-color: lightgreen;
+}
+
+.wall {
+    background-color: gray;
+}
+
+.house {
+    background-color: yellow;
+}
+
+.error {
+    background-color: #ff9999;
+    border: 2px solid red !important;
+}
+
+.wall.error {
+    background-color: darkred;
+}
+
+#message {
+    color: red;
+}
+
+#win {
+    width: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid green;
+}

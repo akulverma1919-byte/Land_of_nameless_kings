@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lands of Nameless King</title>
+    <link rel="stylesheet" href="landsOfNamelessKings.css">
+</head>
+<body>
+    <h1 id="head-1">Lands of Nameless King</h1>
+
+    <!-- START SCREEN -->
+    <div id="start">
+        <h2 id="new">New game</h2>
+        Name: <input type="text" id="name">
+        <br><br>
+        Level:  
+        <select id="level">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <br><br>
+        <button id="startButton">Start Game</button>
+        <p id="startMessage"></p>
+
+        <button id="rulesButton">Show / hide rules</button>
+        <div id="rules" hidden>
+            <ul>
+                <li>Every house must get as many cells as its number (the house counts too).</li>
+                <li>A property must be connected (up, down, left, right).</li>
+                <li>Every property has exactly one house.</li>
+                <li>Two properties can not touch side by side, only at corners.</li>
+                <li>All walls must be connected.</li>
+                <li>Walls can not fill a 2x2 square.</li>
+                <li>Left click: wall on/off (you can drag). Right click: mark property on/off.</li>
+            </ul>
+        </div>
+
+        <h2 id="save">Saved games</h2>
+        <ul id="saves"></ul>
+
+        <h2 id="lead">Leaderboard</h2>
+        <div id="leaderboard"></div>
+    </div>
+
+    <!-- GAME SCREEN -->
+    <div id="game" hidden>
+        <p>
+            Player: <b id="player"></b> |
+            Level: <b id="levelName"></b> |
+            Time: <b id="time">00:00</b>
+        </p>
+
+        <table id="board"></table>
+        <p><span id="white">White</span>= undecided,<span id="green">Green</span>= property,<span id="gray">Gray</span>= wall,<span id="yellow">Yellow</span>= house</p>
+        <p id="message"></p>
+
+        <button id="saveButton">Save game</button>
+        <button id="menuButton">Main menu</button>
+
+        <div id="win" hidden>
+            <h2>You won!</h2>
+            <p id="winText"></p>
+            <button id="winMenuButton">Back to menu</button>
+        </div>
+    </div>
+
+    <script src="landsOfNamelessKings.js"></script>
+</body>
+</html>
